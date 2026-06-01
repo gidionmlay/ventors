@@ -98,7 +98,7 @@
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
                             <a href="index.html">
-                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
+                                <img src="assets/img/logo/black-logo.svg" alt="logo-img" style="max-width: 120px;">
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -242,9 +242,11 @@
                     </div>
                 </div>
                 <div class="col-xl-12">
-                    <div class="pp-hero-image wow img-custom-anim-bottom" data-wow-duration="1.3s"
+                    <div class="pp-hero-image wow img-custom-anim-bottom text-center mt-5" data-wow-duration="1.3s"
                         data-wow-delay="0.3s">
-                        <img src="assets/img/home-1/hero/hero-1.jpg" alt="img">
+                        <img src="assets/img/home-1/hero/hero-device-mochup.png" alt="Hero Mockup"
+                            class="img-fluid"
+                            style="max-height: 700px; object-fit: contain; width: 100%; object-position: center;">
                     </div>
                 </div>
             </div>
@@ -261,28 +263,28 @@
                 <div class="swiper pp-brand-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/home-1/brand/01.png" alt="img">
+                            <div class="brand-text text-center" style="display: flex; align-items: center; justify-content: center; height: 60px; filter: grayscale(100%) opacity(0.7); transition: all 0.3s ease;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'">
+                                <h4 style="font-weight: 800; color: #1E73A4; margin: 0; font-size: 22px; text-transform: uppercase; letter-spacing: 2px; font-family: 'Inter', sans-serif;">SWAHILI <span style="font-weight: 400;">SHOP</span></h4>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/home-1/brand/02.png" alt="img">
+                            <div class="brand-text text-center" style="display: flex; align-items: center; justify-content: center; height: 60px; filter: grayscale(100%) opacity(0.7); transition: all 0.3s ease;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'">
+                                <h4 style="font-weight: 800; color: #0000FE; margin: 0; font-size: 24px; letter-spacing: -0.5px; font-family: 'Outfit', sans-serif;">Twende<span style="color: #FF6B00;">Shop</span></h4>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/home-1/brand/03.png" alt="img">
+                            <div class="brand-text text-center" style="display: flex; align-items: center; justify-content: center; height: 60px; filter: grayscale(100%) opacity(0.7); transition: all 0.3s ease;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'">
+                                <h4 style="font-weight: 700; color: #050816; margin: 0; font-size: 22px; text-transform: uppercase; border: 2px solid #050816; padding: 4px 12px; border-radius: 4px;">MINI MARKET</h4>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/home-1/brand/04.png" alt="img">
+                            <div class="brand-text text-center" style="display: flex; align-items: center; justify-content: center; height: 60px; filter: grayscale(100%) opacity(0.7); transition: all 0.3s ease;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'">
+                                <h4 style="font-weight: 800; color: #1E73A4; margin: 0; font-size: 22px; text-transform: uppercase; letter-spacing: 2px; font-family: 'Inter', sans-serif;">SWAHILI <span style="font-weight: 400;">SHOP</span></h4>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/home-1/brand/05.png" alt="img">
+                            <div class="brand-text text-center" style="display: flex; align-items: center; justify-content: center; height: 60px; filter: grayscale(100%) opacity(0.7); transition: all 0.3s ease;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'">
+                                <h4 style="font-weight: 800; color: #0000FE; margin: 0; font-size: 24px; letter-spacing: -0.5px; font-family: 'Outfit', sans-serif;">Twende<span style="color: #FF6B00;">Shop</span></h4>
                             </div>
                         </div>
                     </div>
@@ -297,17 +299,21 @@
             <div class="pp-about-wrapper">
                 <div class="row g-4">
                     <div class="col-lg-6">
-                        <div class="about-image">
-                            <img src="assets/img/home-1/about/about-1.jpg" alt="img" class="wow img-custom-anim-left"
-                                data-wow-duration="1.3s" data-wow-delay="0.3s">
-                            <div class="about-image-2">
-                                <img src="assets/img/home-1/about/about-2.jpg" alt="img">
+                        <div class="about-image position-relative">
+                            <img src="assets/img/home-1/about/about-ipad.png" alt="iPad Mockup"
+                                class="wow img-custom-anim-left img-fluid" data-wow-duration="1.3s"
+                                data-wow-delay="0.3s" style="max-width: 100%; height: auto; object-fit: contain;">
+                            <div class="about-image-2"
+                                style="position: absolute; bottom: -5%; right: -5%; max-width: 45%;">
+                                <img src="assets/img/home-1/about/about -device-mockup.png" alt="Device Mockup"
+                                    class="img-fluid" style="max-width: 100%; height: auto;">
                             </div>
                             <div class="about-shape">
-                                <img src="assets/img/home-1/about/shape-1.png" alt="img">
+                                <img src="assets/img/home-1/about/shape-1.png" alt="Shape">
                             </div>
-                            <div class="circle-shape">
-                                <img src="assets/img/home-1/about/shape-2.png" alt="img">
+                            <div class="circle-shape" style="position: absolute; top: -10%; left: -5%; z-index: -1;">
+                                <img src="assets/img/home-1/about/about-shape.png" alt="Circle Shape" class="img-fluid"
+                                    style="max-width: 150px; opacity: 0.8;">
                             </div>
                         </div>
                     </div>
@@ -475,8 +481,8 @@
                 <div class="row g-4">
                     <div class="col-lg-6">
                         <div class="pp-key-feature-image">
-                            <img src="assets/img/home-1/feature/pos_dashboard.png" alt="POS Dashboard Mockup"
-                                style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                            <img src="assets/img/home-1/feature/feature-mockup.png" alt="POS Dashboard Mockup"
+                                style="max-width: 100%; height: auto; object-fit: contain; background: transparent;">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -546,8 +552,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="pp-key-feature-image">
-                            <img src="assets/img/home-1/feature/ai_dashboard.png" alt="AI Dashboard Mockup"
-                                style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                            <img src="assets/img/home-1/feature/ai-section.png" alt="AI Dashboard Mockup"
+                                style="max-width: 100%; height: auto; object-fit: contain; background: transparent;">
                         </div>
                     </div>
                 </div>
@@ -568,7 +574,8 @@
                 <div class="col-lg-6">
                     <div class="vp-showcase-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                         <span class="pp-sub-title">EXPERIENCE VENTASPRO IN ACTION</span>
-                        <h2 class="text-white mt-3 mb-4">Manage Your Business<br>From <span class="vp-gradient-text">Anywhere</span></h2>
+                        <h2 class="text-white mt-3 mb-4">Manage Your Business<br>From <span
+                                class="vp-gradient-text">Anywhere</span></h2>
                         <p class="vp-showcase-desc mb-5">
                             VentasPro gives you complete control over sales, inventory, finances, and business
                             performance directly from your mobile device — online or offline.
@@ -583,7 +590,11 @@
                         </div>
                         <div class="vp-showcase-ctas d-flex flex-wrap gap-3">
                             <a href="#" class="vp-android-btn">
-                                <svg class="vp-play-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3.18 23.76c.32.18.68.24 1.05.17l13.1-7.57-2.89-2.89-11.26 10.29zM.5 1.27A1.5 1.5 0 0 0 0 2.5v19a1.5 1.5 0 0 0 .5 1.23l.07.06 10.64-10.64v-.25L.57 1.21l-.07.06zM22.49 10.7l-2.89-1.67-3.25 3.25 3.25 3.24 2.9-1.67a1.85 1.85 0 0 0 0-3.15zM4.23.07L17.33 7.64l-2.89 2.89L3.18.24A1.85 1.85 0 0 1 4.23.07z"/></svg>
+                                <svg class="vp-play-icon" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path
+                                        d="M3.18 23.76c.32.18.68.24 1.05.17l13.1-7.57-2.89-2.89-11.26 10.29zM.5 1.27A1.5 1.5 0 0 0 0 2.5v19a1.5 1.5 0 0 0 .5 1.23l.07.06 10.64-10.64v-.25L.57 1.21l-.07.06zM22.49 10.7l-2.89-1.67-3.25 3.25 3.25 3.24 2.9-1.67a1.85 1.85 0 0 0 0-3.15zM4.23.07L17.33 7.64l-2.89 2.89L3.18.24A1.85 1.85 0 0 1 4.23.07z" />
+                                </svg>
                                 Download for Android
                             </a>
                             <a href="#" class="vp-demo-btn">
@@ -595,72 +606,7 @@
                 <!-- RIGHT: phone mockups -->
                 <div class="col-lg-6">
                     <div class="vp-phone-scene wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.3s">
-                        <div class="vp-phone vp-phone-main">
-                            <div class="vp-phone-frame">
-                                <div class="vp-phone-notch"></div>
-                                <div class="vp-phone-screen">
-                                    <div class="vp-screen-header">
-                                        <span class="vp-screen-title">Today's Sales</span>
-                                        <span class="vp-screen-badge online">● Online</span>
-                                    </div>
-                                    <div class="vp-screen-metric">
-                                        <span class="vp-metric-label">Total Revenue</span>
-                                        <span class="vp-metric-value">KES 184,520</span>
-                                        <span class="vp-metric-change up">↑ 12.4% vs yesterday</span>
-                                    </div>
-                                    <div class="vp-screen-bars">
-                                        <div class="vp-bar" style="height:55%"></div>
-                                        <div class="vp-bar" style="height:72%"></div>
-                                        <div class="vp-bar" style="height:48%"></div>
-                                        <div class="vp-bar" style="height:88%"></div>
-                                        <div class="vp-bar" style="height:64%"></div>
-                                        <div class="vp-bar" style="height:95%"></div>
-                                        <div class="vp-bar active" style="height:78%"></div>
-                                    </div>
-                                    <div class="vp-screen-items">
-                                        <div class="vp-screen-item">
-                                            <span class="vp-item-dot cyan"></span>
-                                            <span class="vp-item-name">Milk 500ml</span>
-                                            <span class="vp-item-val">×124</span>
-                                        </div>
-                                        <div class="vp-screen-item">
-                                            <span class="vp-item-dot blue"></span>
-                                            <span class="vp-item-name">Bread Loaf</span>
-                                            <span class="vp-item-val">×89</span>
-                                        </div>
-                                        <div class="vp-screen-item">
-                                            <span class="vp-item-dot purple"></span>
-                                            <span class="vp-item-name">Cooking Oil 1L</span>
-                                            <span class="vp-item-val">×61</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vp-phone vp-phone-secondary">
-                            <div class="vp-phone-frame">
-                                <div class="vp-phone-notch"></div>
-                                <div class="vp-phone-screen vp-screen-dark">
-                                    <div class="vp-screen-header">
-                                        <span class="vp-screen-title">Louis AI</span>
-                                        <span class="vp-screen-badge ai">✦ AI</span>
-                                    </div>
-                                    <div class="vp-ai-bubble">
-                                        <p>Your top product this week is <strong>Milk 500ml</strong>. Restock soon — current supply lasts ~2 days.</p>
-                                    </div>
-                                    <div class="vp-ai-insight"><span class="vp-insight-icon">📈</span><span>Revenue up 12% this month</span></div>
-                                    <div class="vp-ai-insight"><span class="vp-insight-icon">⚠️</span><span>3 items low in stock</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vp-float-card vp-card-1 float-bob-y">
-                            <i class="fa-solid fa-tower-broadcast"></i>
-                            <div><strong>Offline Mode</strong><span>Active — 100% reliable</span></div>
-                        </div>
-                        <div class="vp-float-card vp-card-2 float-bob-x">
-                            <i class="fa-solid fa-bolt"></i>
-                            <div><strong>47 Sales</strong><span>In the last hour</span></div>
-                        </div>
+                        <img src="assets/img/home-1/about/about -device-mockup.png" alt="Device Mockup" class="img-fluid" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
@@ -669,7 +615,6 @@
 
     <!-- Pp-pricing Section Start -->
     <section class="pp-pricing-section section-padding fix">
-
         <div class="container">
             <div class="pp-section-title text-center">
                 <span class="pp-sub-title wow fadeInUp">
@@ -677,261 +622,199 @@
                     <span class="pp-style-2"></span>
                 </span>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Pricing That Fits Your Needs
+                    Simple Pricing for Every Stage of Business Growth
                 </h2>
+                <p class="wow fadeInUp" data-wow-delay=".4s" style="margin-top: 15px; color: #6D6B7B;">
+                    Choose a plan that matches your business size today and scale confidently as your operations grow.
+                </p>
             </div>
-            <div class="pricing-two__tab">
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="pt-1-tab" data-bs-toggle="tab" data-bs-target="#pt-1"
-                            type="button" role="tab" aria-controls="pt-1" aria-selected="true">Monthly</button>
-                        <button class="nav-link" id="pt-2-tab" data-bs-toggle="tab" data-bs-target="#pt-2" type="button"
-                            role="tab" aria-controls="pt-2" aria-selected="false">Yearly</button>
-                    </div>
-                </nav>
-            </div>
-            <div class="pricing__tab-content">
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="pt-1" role="tabpanel" aria-labelledby="pt-1-tab">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pp-pricing-main-item">
-                                    <div class="pp-pricing-card-item">
-                                        <div class="pp-pricing-header">
-                                            <h5>Starter</h5>
-                                            <h2>TZS 20,000<span>/ Per Month</span></h2>
-                                        </div>
-                                        <ul class="pp-pricing-list">
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Offline-first POS
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                1 user account
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Basic inventory tracking
-                                            </li>
-                                            <li class="pp-style-2">
-                                                <img src="assets/img/home-1/icon/cheak-2.svg" alt="img">
-                                                Standard receipt generation
-                                            </li>
-                                            <li class="pp-style-2">
-                                                <img src="assets/img/home-1/icon/cheak-2.svg" alt="img">
-                                                Email support
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="pp-theme-btn">Get You Free plan</a>
-                                    </div>
-                                </div>
+            
+            <div class="row pt-4">
+                <!-- CARD 1 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="pp-pricing-main-item">
+                        <div class="pp-pricing-card-item">
+                            <div class="pp-pricing-header">
+                                <h5>Starter</h5>
+                                <h2>TZS 5,000<span style="display: block; font-size: 16px; margin-top: 5px; color: #6D6B7B; font-weight: 500;">/month</span></h2>
+                                <p style="font-size: 14px; color: #6D6B7B; margin-top: 15px; line-height: 1.6;">
+                                    Everything you need to run a single business location efficiently.
+                                </p>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pp-pricing-main-item">
-                                    <div class="pp-pricing-card-item">
-                                        <div class="pp-pricing-header">
-                                            <h5>Business</h5>
-                                            <h2>TZS 10,000<span>/ Per Month</span></h2>
-                                        </div>
-                                        <ul class="pp-pricing-list">
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                All Starter features
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Multi-store support
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Louis AI basic insights
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Supplier management
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Advanced reporting
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Priority support
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="pp-theme-btn">Get You Free plan</a>
-                                    </div>
-                                </div>
+                            
+                            <div class="pp-pricing-features mt-4">
+                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;"><i class="fa-solid fa-store" style="margin-right: 5px;"></i> OPERATIONS</h6>
+                                <ul class="pp-pricing-list mb-4">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> 1 Shop</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> 1 User Account</li>
+                                </ul>
+                                
+                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">BUSINESS TOOLS</h6>
+                                <ul class="pp-pricing-list mb-4">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Offline POS System</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Inventory Management</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Sales Tracking</li>
+                                </ul>
+                                
+                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">REPORTING</h6>
+                                <ul class="pp-pricing-list mb-0">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Basic Business Reports</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Customer Management</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Supplier Management</li>
+                                </ul>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pp-pricing-main-item">
-                                    <div class="pp-pricing-card-item">
-                                        <div class="pp-pricing-header">
-                                            <h5>Enterprise</h5>
-                                            <h2>Custom<span>/ Pricing</span></h2>
-                                        </div>
-                                        <ul class="pp-pricing-list">
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                All Business features
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Advanced AI forecasting
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Custom integrations
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Unlimited collaborators
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Dedicated account manager
-                                            </li>
-                                            <li class="pp-style-2">
-                                                <img src="assets/img/home-1/icon/cheak-2.svg" alt="img">
-                                                On-site training
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="pp-theme-btn">Get You Free plan</a>
-                                    </div>
-                                </div>
+                            
+                            <div style="font-size: 13px; color: #1E73A4; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05); font-weight: 600;">
+                                BEST FOR: Small shops, kiosks, and owner-operated businesses.
                             </div>
                         </div>
+                        <div class="pricing-button">
+                            <a href="contact.html" class="pp-theme-btn">Get Started</a>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="pt-2" role="tabpanel" aria-labelledby="pt-2-tab">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pp-pricing-main-item">
-                                    <div class="pp-pricing-card-item">
-                                        <div class="pp-pricing-header">
-                                            <h5>Starter</h5>
-                                            <h2>$14.9<span>/ Per Month</span></h2>
-                                        </div>
-                                        <ul class="pp-pricing-list">
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Offline-first POS
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                1 user account
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Basic inventory tracking
-                                            </li>
-                                            <li class="pp-style-2">
-                                                <img src="assets/img/home-1/icon/cheak-2.svg" alt="img">
-                                                Standard receipt generation
-                                            </li>
-                                            <li class="pp-style-2">
-                                                <img src="assets/img/home-1/icon/cheak-2.svg" alt="img">
-                                                Email support
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="pp-theme-btn">Get You Free plan</a>
-                                    </div>
-                                </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="pp-pricing-main-item" style="transform: scale(1.05); z-index: 2; position: relative;">
+                        <div class="pp-pricing-card-item pp-style-2" style="border: 2px solid #0000FE; box-shadow: 0px 30px 60px rgba(0,0,254,0.15);">
+                            <div style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #0000FE 0%, #4D4DFF 100%); color: #fff; padding: 8px 24px; border-radius: 30px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 0 8px 20px rgba(0,0,254,0.4), inset 0 2px 4px rgba(255,255,255,0.4); white-space: nowrap; border: 2px solid #fff; z-index: 10; display: flex; align-items: center; gap: 6px;">
+                                <i class="fa-solid fa-fire" style="color: #FFD700;"></i> MOST POPULAR
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pp-pricing-main-item">
-                                    <div class="pp-pricing-card-item">
-                                        <div class="pp-pricing-header">
-                                            <h5>Business</h5>
-                                            <h2>TZS 29,000<span>/ Per Month</span></h2>
-                                        </div>
-                                        <ul class="pp-pricing-list">
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                All Starter features
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Multi-store support
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Louis AI basic insights
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Supplier management
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Advanced reporting
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Priority support
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="pp-theme-btn">Get You Free plan</a>
-                                    </div>
-                                </div>
+                            <div style="text-align: center; font-size: 12px; color: #6D6B7B; margin-bottom: 15px; font-weight: 500; padding-top: 10px;">
+                                Chosen by growing retailers and multi-location businesses.
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pp-pricing-main-item">
-                                    <div class="pp-pricing-card-item">
-                                        <div class="pp-pricing-header">
-                                            <h5>Enterprise</h5>
-                                            <h2>Custom<span>/ Pricing</span></h2>
-                                        </div>
-                                        <ul class="pp-pricing-list">
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                All Business features
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Advanced AI forecasting
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Custom integrations
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Unlimited collaborators
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/home-1/icon/cheak.svg" alt="img">
-                                                Dedicated account manager
-                                            </li>
-                                            <li class="pp-style-2">
-                                                <img src="assets/img/home-1/icon/cheak-2.svg" alt="img">
-                                                On-site training
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="pp-theme-btn">Get You Free plan</a>
-                                    </div>
-                                </div>
+                            <div class="pp-pricing-header">
+                                <h5>Business</h5>
+                                <h2>TZS 15,000<span style="display: block; font-size: 16px; margin-top: 5px; color: #6D6B7B; font-weight: 500;">/month</span></h2>
+                                <p style="font-size: 14px; color: #6D6B7B; margin-top: 15px; line-height: 1.6;">
+                                    Built for businesses expanding beyond a single location.
+                                </p>
                             </div>
+                            
+                            <div class="pp-pricing-features mt-4">
+                                <h6 style="font-size: 12px; color: #0000FE; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;"><i class="fa-solid fa-arrow-trend-up" style="margin-right: 5px;"></i> OPERATIONS</h6>
+                                <ul class="pp-pricing-list mb-4">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 2 Shops</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 2 Branches</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Multiple Users</li>
+                                </ul>
+                                
+                                <h6 style="font-size: 12px; color: #0000FE; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">BUSINESS TOOLS</h6>
+                                <ul class="pp-pricing-list mb-4">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Offline POS System</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Inventory Management</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Debt Tracking</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Customer & Supplier Management</li>
+                                </ul>
+                                
+                                <h6 style="font-size: 12px; color: #0000FE; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">INTELLIGENCE</h6>
+                                <ul class="pp-pricing-list mb-0">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Cloud Synchronization</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Advanced Reports</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Louis AI Insights</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="font-size: 13px; color: #0000FE; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0,0,254,0.1); font-weight: 600;">
+                                BEST FOR: Mini supermarkets, pharmacies, restaurants, and growing retail businesses.
+                            </div>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="contact.html" class="pp-theme-btn" style="background: #0000FE; color: #fff; border-color: #0000FE; box-shadow: 0 10px 20px rgba(0,0,254,0.2);">Start Growing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="pp-pricing-main-item">
+                        <div class="pp-pricing-card-item">
+                            <div style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #1E73A4 0%, #2BA0E8 100%); color: #fff; padding: 8px 24px; border-radius: 30px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 0 8px 20px rgba(30,115,164,0.4), inset 0 2px 4px rgba(255,255,255,0.4); white-space: nowrap; border: 2px solid #fff; z-index: 10; display: flex; align-items: center; gap: 6px;">
+                                <i class="fa-solid fa-building"></i> MULTI-STORE
+                            </div>
+                            <div class="pp-pricing-header" style="padding-top: 10px;">
+                                <h5>Enterprise</h5>
+                                <h2>TZS 20,000<span style="display: block; font-size: 16px; margin-top: 5px; color: #6D6B7B; font-weight: 500;">/month</span></h2>
+                                <p style="font-size: 14px; color: #6D6B7B; margin-top: 15px; line-height: 1.6;">
+                                    Centralized management for businesses operating multiple stores and branches.
+                                </p>
+                            </div>
+                            
+                            <div class="pp-pricing-features mt-4">
+                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;"><i class="fa-solid fa-network-wired" style="margin-right: 5px;"></i> OPERATIONS</h6>
+                                <ul class="pp-pricing-list mb-4">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 3 Shops</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 3 Branches</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Unlimited Users</li>
+                                </ul>
+                                
+                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">BUSINESS TOOLS</h6>
+                                <ul class="pp-pricing-list mb-4">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Multi-Store Management</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Profit Tracking</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Cloud Backup</li>
+                                </ul>
+                                
+                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">INTELLIGENCE</h6>
+                                <ul class="pp-pricing-list mb-4">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Advanced Analytics</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Advanced Louis AI Insights</li>
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Business Performance Reports</li>
+                                </ul>
+
+                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">SUPPORT</h6>
+                                <ul class="pp-pricing-list mb-0">
+                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Priority Support</li>
+                                </ul>
+                            </div>
+
+                            <div style="font-size: 13px; color: #1E73A4; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05); font-weight: 600;">
+                                BEST FOR: Wholesalers, multi-location retailers, and expanding business groups.
+                            </div>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="contact.html" class="pp-theme-btn">Contact Sales</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Enterprise Plus Note -->
+            <div class="row justify-content-center mt-5 wow fadeInUp" data-wow-delay=".9s">
+                <div class="col-lg-10">
+                    <div style="background: rgba(30, 115, 164, 0.05); border: 1px solid rgba(0, 0, 254, 0.15); border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 20px;">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <h4 style="font-size: 24px; font-weight: 700; color: #050816; margin-bottom: 10px;">Growing Beyond 3 Stores?</h4>
+                            <p style="margin: 0 auto; color: #6D6B7B; font-size: 16px; line-height: 1.6; max-width: 600px;">
+                                Need to manage 4–6 stores or multiple branches?<br>
+                                <strong>Enterprise Plus</strong> provides centralized reporting, advanced Louis AI analytics, multi-store performance tracking, priority support, and custom deployment options for larger operations.
+                            </p>
+                        </div>
+                        
+                        <div class="row justify-content-center mb-2">
+                            <div class="col-lg-10">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Up to 6 Stores & Branches</li>
+                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Advanced Louis AI Analytics</li>
+                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Centralized Reporting</li>
+                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Multi-Store Performance Tracking</li>
+                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Dedicated Support</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 15px;">
+                            <a href="contact.html" class="pp-theme-btn" style="background: transparent; border: 2px solid #0000FE; color: #0000FE; padding: 12px 35px; text-align: center; font-weight: 600; box-shadow: 0 5px 15px rgba(0,0,254,0.1);">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-   <!-- Pp-testimonial Section Start (Enhanced Video Slider) -->
+    <!-- Pp-testimonial Section Start (Enhanced Video Slider) -->
     <section class="pp-testimonial-section vp-testimonial-enhanced section-padding fix">
         <div class="container">
             <div class="pp-section-title-area">
@@ -1095,7 +978,7 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
                         <div class="pp-cta-image">
-                            <img src="assets/img/home-1/cta/cta-1.jpg" alt="img" class="wow img-custom-anim-top"
+                            <img src="assets/img/home-1/cta/manage.png" alt="img" class="wow img-custom-anim-top"
                                 data-wow-duration="1.3s" data-wow-delay="0.3s">
                             <div class="pp-cta-image-2">
                                 <img src="assets/img/home-1/cta/cta-2.jpg" alt="img" class="wow img-custom-anim-right"
@@ -1234,7 +1117,7 @@
                                 </div>
                                 <div class="pp-content">
                                     <h6>
-                                        <a href="tel:+254700000000">+254 700 000 000</a> <br>
+                                        <a href="tel:+254700000000">+255 768 857 062</a> <br>
                                     </h6>
                                 </div>
                             </div>
@@ -1288,500 +1171,765 @@
 
     <!-- ===== VentasPro Enhancement Styles ===== -->
     <style>
-    /* -----------------------------------------------
+        /* -----------------------------------------------
        APP SHOWCASE SECTION
     ----------------------------------------------- */
-    .vp-showcase-section {
-        position: relative;
-        background: #060d1f;
-        padding: 120px 0;
-        overflow: hidden;
-    }
-    .vp-showcase-bg {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        z-index: 0;
-    }
-    .vp-glow {
-        position: absolute;
-        border-radius: 50%;
-        filter: blur(90px);
-        opacity: .55;
-    }
-    .vp-glow-1 {
-        width: 600px; height: 600px;
-        background: radial-gradient(circle, rgba(15,40,247,.45) 0%, transparent 70%);
-        top: -120px; left: -150px;
-    }
-    .vp-glow-2 {
-        width: 500px; height: 500px;
-        background: radial-gradient(circle, rgba(0,212,255,.3) 0%, transparent 70%);
-        bottom: -80px; right: 5%;
-    }
-    .vp-glow-3 {
-        width: 350px; height: 350px;
-        background: radial-gradient(circle, rgba(99,37,255,.25) 0%, transparent 70%);
-        top: 40%; left: 35%;
-    }
-    .vp-showcase-section .container { position: relative; z-index: 2; }
+        .vp-showcase-section {
+            position: relative;
+            background: #060d1f;
+            padding: 120px 0;
+            overflow: hidden;
+        }
 
-    /* gradient heading word */
-    .vp-gradient-text {
-        background: linear-gradient(135deg, #00d4ff 0%, #0f28f7 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-    .vp-showcase-desc {
-        color: rgba(255,255,255,.65);
-        font-size: 17px;
-        line-height: 1.75;
-        max-width: 520px;
-    }
+        .vp-showcase-bg {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
 
-    /* Feature pills */
-    .vp-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-    .vp-pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 7px;
-        padding: 8px 16px;
-        border-radius: 100px;
-        background: rgba(15,40,247,.12);
-        border: 1px solid rgba(15,40,247,.35);
-        color: rgba(255,255,255,.85);
-        font-size: 13px;
-        font-weight: 600;
-        font-family: "Comfortaa", sans-serif;
-        backdrop-filter: blur(8px);
-        transition: all .3s ease;
-    }
-    .vp-pill i { color: #00d4ff; font-size: 12px; }
-    .vp-pill:hover {
-        background: rgba(15,40,247,.28);
-        border-color: rgba(0,212,255,.6);
-        transform: translateY(-2px);
-    }
+        .vp-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: .55;
+        }
 
-    /* Android CTA button */
-    .vp-android-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        padding: 16px 28px;
-        border-radius: 100px;
-        background: linear-gradient(135deg, #0f28f7 0%, #00a8cc 100%);
-        color: #fff !important;
-        font-size: 15px;
-        font-weight: 700;
-        font-family: "Comfortaa", sans-serif;
-        box-shadow: 0 0 28px rgba(15,40,247,.45);
-        transition: all .4s ease;
-        text-decoration: none;
-    }
-    .vp-android-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 0 45px rgba(0,212,255,.55);
-    }
-    .vp-play-icon { width: 20px; height: 20px; flex-shrink: 0; }
+        .vp-glow-1 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(15, 40, 247, .45) 0%, transparent 70%);
+            top: -120px;
+            left: -150px;
+        }
 
-    /* Demo button */
-    .vp-demo-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 15px 28px;
-        border-radius: 100px;
-        border: 1.5px solid rgba(255,255,255,.25);
-        color: rgba(255,255,255,.85) !important;
-        font-size: 15px;
-        font-weight: 600;
-        font-family: "Comfortaa", sans-serif;
-        backdrop-filter: blur(8px);
-        transition: all .35s ease;
-        text-decoration: none;
-    }
-    .vp-demo-btn i { color: #00d4ff; }
-    .vp-demo-btn:hover {
-        border-color: #00d4ff;
-        color: #fff !important;
-        background: rgba(0,212,255,.08);
-        transform: translateY(-2px);
-    }
+        .vp-glow-2 {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 212, 255, .3) 0%, transparent 70%);
+            bottom: -80px;
+            right: 5%;
+        }
 
-    /* ---- Phone scene ---- */
-    .vp-phone-scene {
-        position: relative;
-        height: 560px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .vp-phone { position: absolute; }
-    .vp-phone-frame {
-        border-radius: 36px;
-        background: #0d1b40;
-        border: 2px solid rgba(255,255,255,.12);
-        box-shadow:
-            0 30px 80px rgba(0,0,0,.6),
-            0 0 0 1px rgba(255,255,255,.06),
-            inset 0 1px 0 rgba(255,255,255,.08);
-        overflow: hidden;
-        padding: 16px 12px 12px;
-    }
-    .vp-phone-notch {
-        width: 90px; height: 20px;
-        background: #060d1f;
-        border-radius: 0 0 14px 14px;
-        margin: 0 auto 10px;
-    }
-    .vp-phone-screen {
-        border-radius: 20px;
-        background: #0a1628;
-        padding: 14px;
-        overflow: hidden;
-    }
+        .vp-glow-3 {
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(99, 37, 255, .25) 0%, transparent 70%);
+            top: 40%;
+            left: 35%;
+        }
 
-    /* Main phone */
-    .vp-phone-main {
-        width: 230px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-55%, -50%);
-        z-index: 3;
-    }
-    .vp-phone-main .vp-phone-frame { padding: 18px 14px 14px; }
-    .vp-phone-main .vp-phone-screen { min-height: 380px; }
+        .vp-showcase-section .container {
+            position: relative;
+            z-index: 2;
+        }
 
-    /* Secondary phone */
-    .vp-phone-secondary {
-        width: 190px;
-        right: 0;
-        top: 50%;
-        transform: translateY(-42%) rotate(4deg);
-        z-index: 2;
-    }
-    .vp-phone-secondary .vp-phone-screen { min-height: 290px; }
-    .vp-screen-dark { background: #06101e !important; }
+        /* gradient heading word */
+        .vp-gradient-text {
+            background: linear-gradient(135deg, #00d4ff 0%, #0f28f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-    /* Screen internals */
-    .vp-screen-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 12px;
-    }
-    .vp-screen-title { color: #fff; font-size: 11px; font-weight: 700; font-family: "Comfortaa",sans-serif; }
-    .vp-screen-badge {
-        font-size: 9px;
-        font-weight: 700;
-        border-radius: 20px;
-        padding: 3px 8px;
-    }
-    .vp-screen-badge.online { background: rgba(0,212,100,.2); color: #00d464; }
-    .vp-screen-badge.ai     { background: rgba(99,37,255,.3); color: #c084fc; }
+        .vp-showcase-desc {
+            color: rgba(255, 255, 255, .65);
+            font-size: 17px;
+            line-height: 1.75;
+            max-width: 520px;
+        }
 
-    .vp-screen-metric { margin-bottom: 14px; }
-    .vp-metric-label { display: block; color: rgba(255,255,255,.45); font-size: 9px; margin-bottom: 3px; }
-    .vp-metric-value { display: block; color: #fff; font-size: 18px; font-weight: 700; font-family: "Comfortaa",sans-serif; }
-    .vp-metric-change { display: block; font-size: 9px; margin-top: 2px; }
-    .vp-metric-change.up { color: #00d464; }
+        /* Feature pills */
+        .vp-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-    /* Mini bar chart */
-    .vp-screen-bars {
-        display: flex;
-        align-items: flex-end;
-        gap: 4px;
-        height: 60px;
-        margin-bottom: 14px;
-    }
-    .vp-bar {
-        flex: 1;
-        background: rgba(15,40,247,.35);
-        border-radius: 3px 3px 0 0;
-        transition: background .3s;
-    }
-    .vp-bar.active { background: linear-gradient(180deg, #00d4ff, #0f28f7); }
+        .vp-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 8px 16px;
+            border-radius: 100px;
+            background: rgba(15, 40, 247, .12);
+            border: 1px solid rgba(15, 40, 247, .35);
+            color: rgba(255, 255, 255, .85);
+            font-size: 13px;
+            font-weight: 600;
+            font-family: "Comfortaa", sans-serif;
+            backdrop-filter: blur(8px);
+            transition: all .3s ease;
+        }
 
-    /* Item list */
-    .vp-screen-items { display: flex; flex-direction: column; gap: 7px; }
-    .vp-screen-item {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        background: rgba(255,255,255,.04);
-        border-radius: 8px;
-        padding: 6px 8px;
-    }
-    .vp-item-dot {
-        width: 7px; height: 7px;
-        border-radius: 50%; flex-shrink: 0;
-    }
-    .vp-item-dot.cyan   { background: #00d4ff; }
-    .vp-item-dot.blue   { background: #0f28f7; }
-    .vp-item-dot.purple { background: #a855f7; }
-    .vp-item-name { flex: 1; color: rgba(255,255,255,.75); font-size: 9px; }
-    .vp-item-val  { color: #fff; font-size: 9px; font-weight: 700; }
+        .vp-pill i {
+            color: #00d4ff;
+            font-size: 12px;
+        }
 
-    /* AI screen internals */
-    .vp-ai-bubble {
-        background: rgba(15,40,247,.15);
-        border: 1px solid rgba(15,40,247,.3);
-        border-radius: 12px;
-        padding: 10px 12px;
-        margin-bottom: 10px;
-    }
-    .vp-ai-bubble p { color: rgba(255,255,255,.8); font-size: 9px; line-height: 1.5; margin: 0; }
-    .vp-ai-bubble strong { color: #00d4ff; }
-    .vp-ai-insight {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 7px 10px;
-        background: rgba(255,255,255,.03);
-        border-radius: 8px;
-        margin-bottom: 6px;
-    }
-    .vp-insight-icon { font-size: 12px; }
-    .vp-ai-insight span:last-child { color: rgba(255,255,255,.65); font-size: 9px; }
+        .vp-pill:hover {
+            background: rgba(15, 40, 247, .28);
+            border-color: rgba(0, 212, 255, .6);
+            transform: translateY(-2px);
+        }
 
-    /* Floating glass cards */
-    .vp-float-card {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background: rgba(13,27,64,.75);
-        backdrop-filter: blur(14px);
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 14px;
-        padding: 12px 18px;
-        box-shadow: 0 8px 32px rgba(0,0,0,.4);
-        z-index: 5;
-    }
-    .vp-float-card i { color: #00d4ff; font-size: 18px; }
-    .vp-float-card div { display: flex; flex-direction: column; }
-    .vp-float-card strong { color: #fff; font-size: 12px; font-family: "Comfortaa",sans-serif; }
-    .vp-float-card span  { color: rgba(255,255,255,.5); font-size: 10px; }
-    .vp-card-1 { left: -20px; bottom: 60px; }
-    .vp-card-2 { right: -10px; top: 80px; }
+        /* Android CTA button */
+        .vp-android-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 28px;
+            border-radius: 100px;
+            background: linear-gradient(135deg, #0f28f7 0%, #00a8cc 100%);
+            color: #fff !important;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: "Comfortaa", sans-serif;
+            box-shadow: 0 0 28px rgba(15, 40, 247, .45);
+            transition: all .4s ease;
+            text-decoration: none;
+        }
 
-    @media (max-width: 991px) {
-        .vp-phone-scene { height: 420px; }
-        .vp-phone-main  { width: 190px; }
-        .vp-phone-secondary { width: 155px; }
-    }
-    @media (max-width: 767px) {
-        .vp-showcase-section { padding: 80px 0; }
-        .vp-phone-secondary { display: none; }
-        .vp-card-1, .vp-card-2 { display: none; }
-        .vp-phone-main { position: relative; transform: none; left: auto; top: auto; margin: 0 auto; }
-        .vp-phone-scene { height: auto; justify-content: center; }
-    }
+        .vp-android-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 45px rgba(0, 212, 255, .55);
+        }
 
-    /* -----------------------------------------------
+        .vp-play-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Demo button */
+        .vp-demo-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 28px;
+            border-radius: 100px;
+            border: 1.5px solid rgba(255, 255, 255, .25);
+            color: rgba(255, 255, 255, .85) !important;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: "Comfortaa", sans-serif;
+            backdrop-filter: blur(8px);
+            transition: all .35s ease;
+            text-decoration: none;
+        }
+
+        .vp-demo-btn i {
+            color: #00d4ff;
+        }
+
+        .vp-demo-btn:hover {
+            border-color: #00d4ff;
+            color: #fff !important;
+            background: rgba(0, 212, 255, .08);
+            transform: translateY(-2px);
+        }
+
+        /* ---- Phone scene ---- */
+        .vp-phone-scene {
+            position: relative;
+            height: 560px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vp-phone {
+            position: absolute;
+        }
+
+        .vp-phone-frame {
+            border-radius: 36px;
+            background: #0d1b40;
+            border: 2px solid rgba(255, 255, 255, .12);
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, .6),
+                0 0 0 1px rgba(255, 255, 255, .06),
+                inset 0 1px 0 rgba(255, 255, 255, .08);
+            overflow: hidden;
+            padding: 16px 12px 12px;
+        }
+
+        .vp-phone-notch {
+            width: 90px;
+            height: 20px;
+            background: #060d1f;
+            border-radius: 0 0 14px 14px;
+            margin: 0 auto 10px;
+        }
+
+        .vp-phone-screen {
+            border-radius: 20px;
+            background: #0a1628;
+            padding: 14px;
+            overflow: hidden;
+        }
+
+        /* Main phone */
+        .vp-phone-main {
+            width: 230px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-55%, -50%);
+            z-index: 3;
+        }
+
+        .vp-phone-main .vp-phone-frame {
+            padding: 18px 14px 14px;
+        }
+
+        .vp-phone-main .vp-phone-screen {
+            min-height: 380px;
+        }
+
+        /* Secondary phone */
+        .vp-phone-secondary {
+            width: 190px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-42%) rotate(4deg);
+            z-index: 2;
+        }
+
+        .vp-phone-secondary .vp-phone-screen {
+            min-height: 290px;
+        }
+
+        .vp-screen-dark {
+            background: #06101e !important;
+        }
+
+        /* Screen internals */
+        .vp-screen-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .vp-screen-title {
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        .vp-screen-badge {
+            font-size: 9px;
+            font-weight: 700;
+            border-radius: 20px;
+            padding: 3px 8px;
+        }
+
+        .vp-screen-badge.online {
+            background: rgba(0, 212, 100, .2);
+            color: #00d464;
+        }
+
+        .vp-screen-badge.ai {
+            background: rgba(99, 37, 255, .3);
+            color: #c084fc;
+        }
+
+        .vp-screen-metric {
+            margin-bottom: 14px;
+        }
+
+        .vp-metric-label {
+            display: block;
+            color: rgba(255, 255, 255, .45);
+            font-size: 9px;
+            margin-bottom: 3px;
+        }
+
+        .vp-metric-value {
+            display: block;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        .vp-metric-change {
+            display: block;
+            font-size: 9px;
+            margin-top: 2px;
+        }
+
+        .vp-metric-change.up {
+            color: #00d464;
+        }
+
+        /* Mini bar chart */
+        .vp-screen-bars {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            height: 60px;
+            margin-bottom: 14px;
+        }
+
+        .vp-bar {
+            flex: 1;
+            background: rgba(15, 40, 247, .35);
+            border-radius: 3px 3px 0 0;
+            transition: background .3s;
+        }
+
+        .vp-bar.active {
+            background: linear-gradient(180deg, #00d4ff, #0f28f7);
+        }
+
+        /* Item list */
+        .vp-screen-items {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .vp-screen-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(255, 255, 255, .04);
+            border-radius: 8px;
+            padding: 6px 8px;
+        }
+
+        .vp-item-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .vp-item-dot.cyan {
+            background: #00d4ff;
+        }
+
+        .vp-item-dot.blue {
+            background: #0f28f7;
+        }
+
+        .vp-item-dot.purple {
+            background: #a855f7;
+        }
+
+        .vp-item-name {
+            flex: 1;
+            color: rgba(255, 255, 255, .75);
+            font-size: 9px;
+        }
+
+        .vp-item-val {
+            color: #fff;
+            font-size: 9px;
+            font-weight: 700;
+        }
+
+        /* AI screen internals */
+        .vp-ai-bubble {
+            background: rgba(15, 40, 247, .15);
+            border: 1px solid rgba(15, 40, 247, .3);
+            border-radius: 12px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+        }
+
+        .vp-ai-bubble p {
+            color: rgba(255, 255, 255, .8);
+            font-size: 9px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .vp-ai-bubble strong {
+            color: #00d4ff;
+        }
+
+        .vp-ai-insight {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 10px;
+            background: rgba(255, 255, 255, .03);
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+
+        .vp-insight-icon {
+            font-size: 12px;
+        }
+
+        .vp-ai-insight span:last-child {
+            color: rgba(255, 255, 255, .65);
+            font-size: 9px;
+        }
+
+        /* Floating glass cards */
+        .vp-float-card {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(13, 27, 64, .75);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 14px;
+            padding: 12px 18px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
+            z-index: 5;
+        }
+
+        .vp-float-card i {
+            color: #00d4ff;
+            font-size: 18px;
+        }
+
+        .vp-float-card div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vp-float-card strong {
+            color: #fff;
+            font-size: 12px;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        .vp-float-card span {
+            color: rgba(255, 255, 255, .5);
+            font-size: 10px;
+        }
+
+        .vp-card-1 {
+            left: -20px;
+            bottom: 60px;
+        }
+
+        .vp-card-2 {
+            right: -10px;
+            top: 80px;
+        }
+
+        @media (max-width: 991px) {
+            .vp-phone-scene {
+                height: 420px;
+            }
+
+            .vp-phone-main {
+                width: 190px;
+            }
+
+            .vp-phone-secondary {
+                width: 155px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .vp-showcase-section {
+                padding: 80px 0;
+            }
+
+            .vp-phone-secondary {
+                display: none;
+            }
+
+            .vp-card-1,
+            .vp-card-2 {
+                display: none;
+            }
+
+            .vp-phone-main {
+                position: relative;
+                transform: none;
+                left: auto;
+                top: auto;
+                margin: 0 auto;
+            }
+
+            .vp-phone-scene {
+                height: auto;
+                justify-content: center;
+            }
+        }
+
+        /* -----------------------------------------------
        ENHANCED TESTIMONIAL SECTION
     ----------------------------------------------- */
-    .vp-testimonial-enhanced { background: #fafafa; }
+        .vp-testimonial-enhanced {
+            background: #fafafa;
+        }
 
-    .vp-testi-slider { padding-bottom: 10px; }
-    .vp-testi-slider .swiper-wrapper { align-items: stretch; }
+        .vp-testi-slider {
+            padding-bottom: 10px;
+        }
 
-    .vp-video-testi-card {
-        border-radius: 20px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0 8px 40px rgba(0,0,0,.09);
-        border: 1px solid rgba(204,203,209,.3);
-        transition: transform .35s ease, box-shadow .35s ease;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .vp-video-testi-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 20px 60px rgba(15,40,247,.14);
-    }
+        .vp-testi-slider .swiper-wrapper {
+            align-items: stretch;
+        }
 
-    /* Cinematic thumbnail */
-    .vp-video-thumb {
-        position: relative;
-        height: 200px;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 20px 20px 0 0;
-    }
-    .vp-thumb-bg {
-        position: absolute;
-        inset: 0;
-        background-size: cover;
-        background-position: center;
-        transition: transform .5s ease;
-    }
-    .vp-video-thumb:hover .vp-thumb-bg { transform: scale(1.06); }
+        .vp-video-testi-card {
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, .09);
+            border: 1px solid rgba(204, 203, 209, .3);
+            transition: transform .35s ease, box-shadow .35s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-    /* Gradient thumbnail fills (cinematic dark-tinted gradients per persona) */
-    .vp-thumb-1 { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0f4c81 100%); }
-    .vp-thumb-2 { background: linear-gradient(135deg, #0d1117 0%, #1a2744 40%, #2563eb 100%); }
-    .vp-thumb-3 { background: linear-gradient(135deg, #0a0f1e 0%, #1a3a2a 40%, #0d7a4e 100%); }
-    .vp-thumb-4 { background: linear-gradient(135deg, #1a0a1e 0%, #3b1f5e 40%, #7c3aed 100%); }
+        .vp-video-testi-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px rgba(15, 40, 247, .14);
+        }
 
-    .vp-thumb-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(0,0,0,.6) 0%, transparent 60%);
-    }
+        /* Cinematic thumbnail */
+        .vp-video-thumb {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 20px 20px 0 0;
+        }
 
-    /* Play button */
-    .vp-play-btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 54px; height: 54px;
-        border-radius: 50%;
-        background: rgba(255,255,255,.18);
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(255,255,255,.45);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 16px;
-        transition: all .3s ease;
-        z-index: 2;
-        padding-left: 3px;
-    }
-    .vp-video-thumb:hover .vp-play-btn {
-        background: rgba(15,40,247,.75);
-        border-color: #0f28f7;
-        transform: translate(-50%, -50%) scale(1.1);
-        box-shadow: 0 0 30px rgba(15,40,247,.6);
-    }
+        .vp-thumb-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            transition: transform .5s ease;
+        }
 
-    /* Thumbnail badge */
-    .vp-thumb-badge {
-        position: absolute;
-        bottom: 12px;
-        left: 14px;
-        padding: 4px 12px;
-        border-radius: 100px;
-        background: rgba(255,255,255,.15);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255,255,255,.25);
-        color: #fff;
-        font-size: 11px;
-        font-weight: 600;
-        font-family: "Comfortaa", sans-serif;
-        z-index: 2;
-    }
+        .vp-video-thumb:hover .vp-thumb-bg {
+            transform: scale(1.06);
+        }
 
-    /* Card body */
-    .vp-testi-body {
-        padding: 24px;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
-    .vp-stars { color: #f59e0b; font-size: 14px; letter-spacing: 2px; margin-bottom: 12px; }
-    .vp-testi-quote {
-        font-size: 14.5px;
-        line-height: 1.72;
-        color: #444;
-        font-style: normal;
-        margin: 0 0 20px;
-        flex: 1;
-        font-family: "Comfortaa", sans-serif;
-        border: none;
-        padding: 0;
-    }
+        /* Gradient thumbnail fills (cinematic dark-tinted gradients per persona) */
+        .vp-thumb-1 {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0f4c81 100%);
+        }
 
-    /* Author row */
-    .vp-testi-author {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 16px;
-    }
-    .vp-author-avatar {
-        width: 44px; height: 44px;
-        border-radius: 50%;
-        border: 2px solid #0f28f7;
-        flex-shrink: 0;
-    }
-    .vp-avatar-1 { background: linear-gradient(135deg, #1e3a5f, #0f4c81); }
-    .vp-avatar-2 { background: linear-gradient(135deg, #1a2744, #2563eb); }
-    .vp-avatar-3 { background: linear-gradient(135deg, #1a3a2a, #0d7a4e); }
-    .vp-avatar-4 { background: linear-gradient(135deg, #3b1f5e, #7c3aed); }
+        .vp-thumb-2 {
+            background: linear-gradient(135deg, #0d1117 0%, #1a2744 40%, #2563eb 100%);
+        }
 
-    .vp-author-info { display: flex; flex-direction: column; }
-    .vp-author-info strong { color: #0c1531; font-size: 14px; font-family: "Comfortaa", sans-serif; }
-    .vp-author-info span  { color: #6D6B7B; font-size: 12px; }
+        .vp-thumb-3 {
+            background: linear-gradient(135deg, #0a0f1e 0%, #1a3a2a 40%, #0d7a4e 100%);
+        }
 
-    /* Testimonial tags */
-    .vp-testi-tags { display: flex; flex-wrap: wrap; gap: 7px; }
-    .vp-testi-tags span {
-        padding: 4px 12px;
-        border-radius: 100px;
-        background: rgba(15,40,247,.07);
-        border: 1px solid rgba(15,40,247,.2);
-        color: #0f28f7;
-        font-size: 11px;
-        font-weight: 600;
-        font-family: "Comfortaa", sans-serif;
-    }
+        .vp-thumb-4 {
+            background: linear-gradient(135deg, #1a0a1e 0%, #3b1f5e 40%, #7c3aed 100%);
+        }
 
-    /* Nav buttons reuse pp-array-buttons styling but override */
-    .vp-testi-prev,
-    .vp-testi-next {
-        width: 48px; height: 48px;
-        border-radius: 50%;
-        border: 1.5px solid rgba(204,203,209,.5) !important;
-        background: #fff;
-        color: #0c1531;
-        font-size: 15px;
-        cursor: pointer;
-        transition: all .3s ease;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .vp-testi-prev:hover,
-    .vp-testi-next:hover {
-        background: #0f28f7;
-        border-color: #0f28f7 !important;
-        color: #fff;
-    }
+        .vp-thumb-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .6) 0%, transparent 60%);
+        }
 
-    @media (max-width: 767px) {
-        .vp-testi-body { padding: 18px; }
-        .vp-video-thumb { height: 170px; }
-    }
+        /* Play button */
+        .vp-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .18);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, .45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 16px;
+            transition: all .3s ease;
+            z-index: 2;
+            padding-left: 3px;
+        }
+
+        .vp-video-thumb:hover .vp-play-btn {
+            background: rgba(15, 40, 247, .75);
+            border-color: #0f28f7;
+            transform: translate(-50%, -50%) scale(1.1);
+            box-shadow: 0 0 30px rgba(15, 40, 247, .6);
+        }
+
+        /* Thumbnail badge */
+        .vp-thumb-badge {
+            position: absolute;
+            bottom: 12px;
+            left: 14px;
+            padding: 4px 12px;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, .25);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            font-family: "Comfortaa", sans-serif;
+            z-index: 2;
+        }
+
+        /* Card body */
+        .vp-testi-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .vp-stars {
+            color: #f59e0b;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .vp-testi-quote {
+            font-size: 14.5px;
+            line-height: 1.72;
+            color: #444;
+            font-style: normal;
+            margin: 0 0 20px;
+            flex: 1;
+            font-family: "Comfortaa", sans-serif;
+            border: none;
+            padding: 0;
+        }
+
+        /* Author row */
+        .vp-testi-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .vp-author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid #0f28f7;
+            flex-shrink: 0;
+        }
+
+        .vp-avatar-1 {
+            background: linear-gradient(135deg, #1e3a5f, #0f4c81);
+        }
+
+        .vp-avatar-2 {
+            background: linear-gradient(135deg, #1a2744, #2563eb);
+        }
+
+        .vp-avatar-3 {
+            background: linear-gradient(135deg, #1a3a2a, #0d7a4e);
+        }
+
+        .vp-avatar-4 {
+            background: linear-gradient(135deg, #3b1f5e, #7c3aed);
+        }
+
+        .vp-author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vp-author-info strong {
+            color: #0c1531;
+            font-size: 14px;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        .vp-author-info span {
+            color: #6D6B7B;
+            font-size: 12px;
+        }
+
+        /* Testimonial tags */
+        .vp-testi-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .vp-testi-tags span {
+            padding: 4px 12px;
+            border-radius: 100px;
+            background: rgba(15, 40, 247, .07);
+            border: 1px solid rgba(15, 40, 247, .2);
+            color: #0f28f7;
+            font-size: 11px;
+            font-weight: 600;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        /* Nav buttons reuse pp-array-buttons styling but override */
+        .vp-testi-prev,
+        .vp-testi-next {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(204, 203, 209, .5) !important;
+            background: #fff;
+            color: #0c1531;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all .3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vp-testi-prev:hover,
+        .vp-testi-next:hover {
+            background: #0f28f7;
+            border-color: #0f28f7 !important;
+            color: #fff;
+        }
+
+        @media (max-width: 767px) {
+            .vp-testi-body {
+                padding: 18px;
+            }
+
+            .vp-video-thumb {
+                height: 170px;
+            }
+        }
     </style>
 
     <!-- ===== VentasPro Testimonial Swiper Init ===== -->
     <script>
-    (function () {
-        document.addEventListener('DOMContentLoaded', function () {
-            if (typeof Swiper === 'undefined') return;
-            var testitSwiper = new Swiper('.vp-testi-slider', {
-                slidesPerView: 1,
-                spaceBetween: 24,
-                speed: 700,
-                grabCursor: true,
-                navigation: {
-                    nextEl: '.vp-testi-next',
-                    prevEl: '.vp-testi-prev',
-                },
-                breakpoints: {
-                    640:  { slidesPerView: 1.2 },
-                    768:  { slidesPerView: 2 },
-                    1200: { slidesPerView: 2, spaceBetween: 30 }
-                }
+        (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+                if (typeof Swiper === 'undefined') return;
+                var testitSwiper = new Swiper('.vp-testi-slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    speed: 700,
+                    grabCursor: true,
+                    navigation: {
+                        nextEl: '.vp-testi-next',
+                        prevEl: '.vp-testi-prev',
+                    },
+                    breakpoints: {
+                        640: { slidesPerView: 1.2 },
+                        768: { slidesPerView: 2 },
+                        1200: { slidesPerView: 2, spaceBetween: 30 }
+                    }
+                });
             });
-        });
-    })();
+        })();
     </script>
 
 </body>

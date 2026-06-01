@@ -20,7 +20,7 @@
        Sidebar Toggle Js Start
     ================================ */
 
-      $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
+      $(".offcanvas__close, .offcanvas__overlay, .mobile-menu a:not(.mean-expand)").on("click", function () {
         $(".offcanvas__info").removeClass("info-open");
         $(".offcanvas__overlay").removeClass("overlay-open");
       });

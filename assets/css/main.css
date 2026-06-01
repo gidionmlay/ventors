@@ -306,7 +306,6 @@ span {
 .pp-about-wrapper .about-image img {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
 }
 
 .pp-about-wrapper .about-image .about-image-2 {
@@ -1747,8 +1746,6 @@ span {
 .pp-key-feature-wrapper .pp-key-feature-image img {
   width: 100%;
   height: 100%;
-  border-radius: 24px;
-  box-shadow: 0px 9px 72px 0px rgba(6, 11, 19, 0.1);
 }
 
 .pp-key-feature-wrapper .pp-key-feature-image .pp-key-feature-image-2 {
@@ -1931,7 +1928,6 @@ span {
 .pp-key-feature-wrapper.pp-style-2 .pp-key-feature-image .pp-key-feature-image-3 img {
   width: 100%;
   height: 100%;
-  border-radius: 24px;
 }
 
 .pp-why-benefit-item {
@@ -4199,6 +4195,8 @@ span {
 @media (max-width: 575px) {
   .pp-hero-1 {
     margin: 0 15px;
+    padding: 160px 0 60px;
+    margin-top: 20px;
   }
 }
 
@@ -4688,15 +4686,15 @@ span {
 
 .mean-container .mean-nav ul li a {
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 5px;
   color: var(--pp-header);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-bottom: 1px solid #E5E5E5 !important;
-  border: none;
-  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+  font-family: "Outfit", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .mean-container .mean-nav ul li a:hover {
