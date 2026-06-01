@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request a Demo - VentasPro</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
+    <style>
+        :root {
+            --vp-primary: #0000FE;
+            --vp-secondary: #1E73A4;
+            --vp-accent: #39C5ED;
+            --vp-dark: #050816;
+            --font-comfortaa: 'Comfortaa', sans-serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: var(--font-comfortaa);
+            overflow-x: hidden;
+            background-color: #ffffff;
+        }
+
+        /* Split Layout */
+        .demo-layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Left Column (Form) */
+        .demo-left {
+            width: 40%;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 10%;
+            position: relative;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 2.5rem;
+            left: 2.5rem;
+            color: var(--vp-dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            font-family: var(--font-comfortaa);
+            opacity: 0.7;
+        }
+        .back-btn:hover {
+            color: var(--vp-primary);
+            opacity: 1;
+        }
+
+        .form-header {
+            margin-bottom: 2.5rem;
+        }
+
+        .small-label {
+            font-family: var(--font-comfortaa);
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--vp-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .form-title {
+            font-family: var(--font-comfortaa);
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--vp-dark);
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        .form-desc {
+            color: #6D6B7B;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--vp-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group label span {
+            color: #999;
+            font-weight: 400;
+            font-size: 0.85rem;
+            margin-left: 0.25rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            color: var(--vp-dark);
+            background-color: #f9f9fc;
+            border: 1px solid #eaeaf1;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-family: var(--font-comfortaa);
+        }
+
+        .form-control:focus {
+            background-color: #ffffff;
+            border-color: var(--vp-primary);
+            box-shadow: 0 0 0 4px rgba(0, 0, 254, 0.1);
+            outline: none;
+        }
+
+        .form-control::placeholder {
+            color: #a0a0b2;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 1.1rem 1.5rem;
+            font-family: var(--font-comfortaa);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0F3DFF, #1E73A4, #39C5ED);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 1rem;
+            box-shadow: 0 10px 25px rgba(15, 61, 255, 0.25);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(15, 61, 255, 0.4);
+        }
+
+        /* Right Column (Image & Content) */
+        .demo-right {
+            width: 60%;
+            position: relative;
+            background-image: url('assets/img/home-1/feature/demo.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .demo-right::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(5,8,22,0.78), rgba(15,61,255,0.55), rgba(30,115,164,0.45));
+            z-index: 1;
+        }
+
+        .glass-card {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 3.5rem;
+            max-width: 620px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255,255,255,0.15);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .glass-label {
+            display: inline-block;
+            font-family: var(--font-comfortaa);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .glass-title {
+            font-family: var(--font-comfortaa);
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .glass-desc {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .feature-item i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #39C5ED, #1E73A4);
+            border-radius: 50%;
+            font-size: 0.6rem;
+            color: #ffffff;
+            box-shadow: 0 4px 10px rgba(57, 197, 237, 0.3);
+        }
+
+        .louis-ai-box {
+            background: rgba(5, 8, 22, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .louis-ai-box:hover {
+            background: rgba(5, 8, 22, 0.5);
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .louis-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, #0F3DFF, #39C5ED);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #ffffff;
+            flex-shrink: 0;
+            box-shadow: 0 8px 20px rgba(15, 61, 255, 0.4);
+        }
+
+        .louis-text h4 {
+            font-family: var(--font-comfortaa);
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .louis-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .demo-left {
+                padding: 4rem 5%;
+            }
+            .glass-card {
+                padding: 2.5rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .demo-layout {
+                flex-direction: column;
+            }
+            .demo-left, .demo-right {
+                width: 100%;
+            }
+            .demo-right {
+                min-height: auto;
+                padding: 4rem 2rem;
+                order: -1;
+            }
+            .back-btn {
+                position: relative;
+                top: 0; left: 0;
+                margin-bottom: 2rem;
+                display: inline-flex;
+            }
+            .demo-left {
+                padding: 3rem 2rem;
+            }
+            .form-title {
+                font-size: 2.25rem;
+            }
+            .glass-title {
+                font-size: 2.25rem;
+            }
+            .glass-card {
+                padding: 2rem;
+            }
+            .feature-grid {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .demo-right {
+                padding: 2.5rem 1rem;
+            }
+            .glass-card {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+            .glass-label {
+                margin-bottom: 1rem;
+                font-size: 0.7rem;
+                padding: 0.3rem 0.8rem;
+            }
+            .glass-title {
+                font-size: 1.75rem;
+                margin-bottom: 0.75rem;
+            }
+            .glass-desc {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.5;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+                margin-bottom: 1.5rem;
+            }
+            .feature-item {
+                font-size: 0.9rem;
+            }
+            .feature-item i {
+                width: 20px;
+                height: 20px;
+                font-size: 0.55rem;
+            }
+            .louis-ai-box {
+                padding: 1rem;
+                gap: 1rem;
+            }
+            .louis-icon {
+                width: 44px;
+                height: 44px;
+                font-size: 1.2rem;
+            }
+            .louis-text h4 {
+                font-size: 1.05rem;
+            }
+            .louis-text p {
+                font-size: 0.85rem;
+            }
+            .demo-left {
+                padding: 2.5rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-layout">
+        <!-- Left Side: Form -->
+        <div class="demo-left">
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+            
+            <div class="form-header">
+                <span class="small-label">REQUEST A DEMO</span>
+                <h1 class="form-title">Let's Get You Started</h1>
+                <p class="form-desc">
+                    Tell us a little about yourself and we'll help you explore how VentasPro can simplify your business operations.
+                </p>
+            </div>
+
+            <form action="#" method="POST" id="demoForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" class="form-control" placeholder="+254 700 000 000" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address <span>(optional)</span></label>
+                    <input type="email" id="emailAddress" class="form-control" placeholder="john@company.com">
+                </div>
+                
+                <button type="submit" class="btn-submit">
+                    Request My Demo <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- Right Side: Emotional / Visual -->
+        <div class="demo-right">
+            <div class="glass-card">
+                <span class="glass-label">VENTASPRO DEMO</span>
+                <h2 class="glass-title">See How Smarter Businesses Operate</h2>
+                <p class="glass-desc">
+                    Discover how VentasPro helps businesses manage sales, inventory, finances, and daily operations from a single intelligent platform — online or offline.
+                </p>
+
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i> Offline POS System
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i> Financial & Profit Tracking
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i> Smart Inventory Tracking
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i> Multi-Store Management
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i> Louis AI Business Intelligence
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i> Cloud Synchronization
+                    </div>
+                </div>
+
+                <div class="louis-ai-box">
+                    <div class="louis-icon">
+                        <i class="fa-solid fa-microchip-ai"></i>
+                    </div>
+                    <div class="louis-text">
+                        <h4>Meet Louis AI</h4>
+                        <p>Your intelligent business assistant that helps transform business data into actionable insights and smarter decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

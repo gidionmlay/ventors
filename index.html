@@ -152,7 +152,7 @@
                         <div class="header-button mt-4">
 
                         </div>
-                        <a href="#demo" class="pp-theme-btn">
+                        <a href="request-demo.html" class="pp-theme-btn">
                             <span class="pp-icon-btn"><i class="icon-icon-1"></i></span>
                             <span class="pp-text-btn">
                                 <span class="pp-text-2">REQUEST DEMO</span>
@@ -198,8 +198,8 @@
                         </div>
                     </div>
                     <div class="header-right d-flex justify-content-end align-items-center">
-                        <a href="#demo" class="pp-theme-btn">
-                            Request Demo <i class="fa-solid fa-arrow-right-long"></i>
+                        <a href="auth/login.html" class="pp-theme-btn pp-style-2" style="display:inline-flex;align-items:center;gap:8px;">
+                            <i class="fa-regular fa-circle-user"></i> Sign In
                         </a>
                         <div class="header__hamburger d-xl-none my-auto">
                             <div class="sidebar__toggle">
@@ -234,7 +234,7 @@
                             without limits.
                         </p>
                         <div class="pp-hero-button">
-                            <a href="#demo" class="pp-theme-btn wow fadeInUp" data-wow-delay=".3s">Request Demo <i
+                            <a href="request-demo.html" class="pp-theme-btn wow fadeInUp" data-wow-delay=".3s">Request Demo <i
                                     class="fa-solid fa-arrow-right-long"></i></a>
                             <a href="#how-it-works" class="pp-theme-btn pp-style-2 wow fadeInUp"
                                 data-wow-delay=".3s">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
@@ -509,7 +509,7 @@
                                     Offline transactions & multi-payment support
                                 </li>
                             </ul>
-                            <a href="#demo" class="pp-theme-btn wow fadeInUp" data-wow-delay=".5s">Learn More <i
+                            <a href="request-demo.html" class="pp-theme-btn wow fadeInUp" data-wow-delay=".5s">Learn More <i
                                     class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
@@ -546,7 +546,7 @@
                                     Smart business recommendations
                                 </li>
                             </ul>
-                            <a href="#demo" class="pp-theme-btn wow fadeInUp" data-wow-delay=".5s">See AI in Action <i
+                            <a href="request-demo.html" class="pp-theme-btn wow fadeInUp" data-wow-delay=".5s">See AI in Action <i
                                     class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
@@ -614,204 +614,334 @@
     </section>
 
     <!-- Pp-pricing Section Start -->
-    <section class="pp-pricing-section section-padding fix">
-        <div class="container">
-            <div class="pp-section-title text-center">
-                <span class="pp-sub-title wow fadeInUp">
-                    PRICING
-                    <span class="pp-style-2"></span>
-                </span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Simple Pricing for Every Stage of Business Growth
-                </h2>
+    <section class="pp-pricing-section section-padding fix" id="pricing">
+        <style>
+            /* Scoped pricing styles */
+            .vp-pricing-wrapper { padding: 4rem 0; font-family: 'Comfortaa', sans-serif; }
+            .vp-billing-toggle { display: flex; align-items: center; justify-content: center; gap: 15px; margin: 30px 0 50px; }
+            .vp-toggle-btn { background: #f9f9fc; border: 1px solid #eaeaf1; border-radius: 30px; padding: 4px; display: flex; align-items: center; cursor: pointer; position: relative; width: 220px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); }
+            .vp-toggle-slider { position: absolute; left: 4px; top: 4px; bottom: 4px; width: calc(50% - 4px); background: #0000FE; border-radius: 26px; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,254,0.3); }
+            .vp-toggle-option { flex: 1; text-align: center; font-size: 14px; font-weight: 700; color: #6D6B7B; z-index: 2; padding: 10px 0; transition: color 0.3s ease; }
+            .vp-toggle-btn.yearly .vp-toggle-slider { left: 50%; }
+            .vp-toggle-btn.yearly .vp-option-monthly { color: #6D6B7B; }
+            .vp-toggle-btn.yearly .vp-option-yearly { color: #fff; }
+            .vp-toggle-btn:not(.yearly) .vp-option-monthly { color: #fff; }
+
+            .vp-pricing-card { background: #fff; border: 1px solid #eaeaf1; border-radius: 24px; padding: 40px; transition: all 0.3s ease; position: relative; display: flex; flex-direction: column; height: 100%; box-shadow: 0 10px 30px rgba(5,8,22,0.05); }
+            .vp-pricing-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(5,8,22,0.1); }
+            .vp-pricing-card.dominant { background: linear-gradient(180deg, #ffffff 0%, #f4f6ff 100%); border: 2px solid #0000FE; box-shadow: 0 20px 50px rgba(0,0,254,0.15); transform: scale(1.05); z-index: 2; }
+            .vp-pricing-card.dominant:hover { transform: scale(1.05) translateY(-5px); box-shadow: 0 30px 60px rgba(0,0,254,0.25); }
+
+            .vp-pricing-icon { width: 50px; height: 50px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px; }
+            .vp-card-starter .vp-pricing-icon { background: rgba(57,197,237,0.1); color: #39C5ED; }
+            .vp-card-business .vp-pricing-icon { background: linear-gradient(135deg, #0000FE, #39C5ED); color: #fff; box-shadow: 0 10px 20px rgba(0,0,254,0.3); }
+            .vp-card-enterprise .vp-pricing-icon { background: rgba(30,115,164,0.1); color: #1E73A4; }
+
+            .vp-plan-name { font-size: 24px; font-weight: 800; color: #050816; margin-bottom: 10px; }
+            .vp-plan-tagline { font-size: 14px; color: #6D6B7B; line-height: 1.5; margin-bottom: 25px; min-height: 42px; }
+
+            .vp-pricing-price { font-size: 36px; font-weight: 800; color: #050816; display: flex; align-items: baseline; gap: 5px; margin-bottom: 5px; }
+            .vp-pricing-period { font-size: 14px; font-weight: 600; color: #6D6B7B; }
+            .vp-pricing-savings { font-size: 13px; font-weight: 700; color: #0000FE; background: rgba(0,0,254,0.1); padding: 4px 10px; border-radius: 20px; display: inline-block; margin-bottom: 20px; opacity: 0; transition: opacity 0.3s ease; }
+            .yearly-active .vp-pricing-savings { opacity: 1; }
+
+            .vp-pricing-desc { font-size: 14px; color: #6D6B7B; line-height: 1.6; margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid #eaeaf1; min-height: 70px; }
+
+            .vp-feature-group { margin-bottom: 25px; }
+            .vp-feature-title { font-size: 11px; font-weight: 800; color: #1E73A4; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 15px; }
+            .vp-card-business .vp-feature-title { color: #0000FE; }
+            .vp-feature-list { list-style: none; padding: 0; margin: 0; }
+            .vp-feature-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; font-weight: 600; color: #050816; margin-bottom: 12px; }
+            .vp-feature-list li i { color: #39C5ED; font-size: 12px; margin-top: 4px; }
+            .vp-card-business .vp-feature-list li i { color: #0000FE; }
+
+            .vp-pricing-btn { width: 100%; padding: 14px; border-radius: 12px; font-weight: 700; font-size: 15px; text-align: center; text-decoration: none; transition: all 0.3s ease; display: inline-block; margin-top: auto; }
+            .vp-btn-outline { border: 2px solid #eaeaf1; color: #050816 !important; background: #fff; }
+            .vp-btn-outline:hover { border-color: #0000FE; color: #0000FE !important; background: #f9f9fc; }
+            .vp-btn-primary { background: linear-gradient(135deg, #0000FE, #39C5ED); color: #fff !important; border: none; box-shadow: 0 10px 25px rgba(0,0,254,0.25); }
+            .vp-btn-primary:hover { box-shadow: 0 15px 35px rgba(0,0,254,0.35); transform: translateY(-2px); }
+
+            .vp-popular-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #0F3DFF, #39C5ED); color: #fff; padding: 6px 16px; border-radius: 30px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 0 8px 20px rgba(0,0,254,0.3); border: 2px solid #fff; white-space: nowrap; }
+
+            .vp-trust-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 60px; padding: 25px; background: rgba(30,115,164,0.05); border-radius: 16px; border: 1px solid rgba(30,115,164,0.1); }
+            .vp-trust-item { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: #050816; }
+            .vp-trust-item i { color: #0000FE; font-size: 16px; }
+
+            .vp-enterprise-banner { background: #050816; border-radius: 20px; padding: 40px; margin-top: 40px; position: relative; overflow: hidden; color: #fff; box-shadow: 0 20px 40px rgba(5,8,22,0.2); }
+            .vp-enterprise-banner::before { content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 60%; background: radial-gradient(circle at 100% 50%, rgba(57,197,237,0.15) 0%, transparent 70%); }
+            .vp-eb-title { font-size: 26px; font-weight: 800; margin-bottom: 12px; }
+            .vp-eb-desc { font-size: 15px; color: rgba(255,255,255,0.7); max-width: 600px; line-height: 1.6; margin-bottom: 25px; }
+            .vp-eb-features { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px; list-style: none; padding: 0; }
+            .vp-eb-features li { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #fff; }
+            .vp-eb-features li i { color: #39C5ED; }
+
+            .price-amount, .period-text { transition: opacity 0.2s ease; }
+
+            @media (max-width: 1199px) { .vp-pricing-card.dominant { transform: scale(1); } .vp-pricing-card.dominant:hover { transform: translateY(-5px); } }
+            @media (max-width: 991px) { .vp-pricing-card { margin-bottom: 30px; } .vp-pricing-wrapper { padding: 2rem 0; } }
+            @media (max-width: 767px) { .vp-eb-features { flex-direction: column; gap: 10px; } }
+        </style>
+        <div class="container vp-pricing-wrapper">
+            <div class="pp-section-title text-center mb-0">
+                <span class="pp-sub-title wow fadeInUp">PRICING</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Simple Pricing For Every Stage Of Business Growth</h2>
                 <p class="wow fadeInUp" data-wow-delay=".4s" style="margin-top: 15px; color: #6D6B7B;">
-                    Choose a plan that matches your business size today and scale confidently as your operations grow.
+                    Choose a plan that matches your business size today and scale confidently as your operations expand.
                 </p>
             </div>
-            
-            <div class="row pt-4">
-                <!-- CARD 1 -->
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="pp-pricing-main-item">
-                        <div class="pp-pricing-card-item">
-                            <div class="pp-pricing-header">
-                                <h5>Starter</h5>
-                                <h2>TZS 5,000<span style="display: block; font-size: 16px; margin-top: 5px; color: #6D6B7B; font-weight: 500;">/month</span></h2>
-                                <p style="font-size: 14px; color: #6D6B7B; margin-top: 15px; line-height: 1.6;">
-                                    Everything you need to run a single business location efficiently.
-                                </p>
-                            </div>
-                            
-                            <div class="pp-pricing-features mt-4">
-                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;"><i class="fa-solid fa-store" style="margin-right: 5px;"></i> OPERATIONS</h6>
-                                <ul class="pp-pricing-list mb-4">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> 1 Shop</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> 1 User Account</li>
-                                </ul>
-                                
-                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">BUSINESS TOOLS</h6>
-                                <ul class="pp-pricing-list mb-4">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Offline POS System</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Inventory Management</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Sales Tracking</li>
-                                </ul>
-                                
-                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">REPORTING</h6>
-                                <ul class="pp-pricing-list mb-0">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Basic Business Reports</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Customer Management</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Supplier Management</li>
-                                </ul>
-                            </div>
-                            
-                            <div style="font-size: 13px; color: #1E73A4; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05); font-weight: 600;">
-                                BEST FOR: Small shops, kiosks, and owner-operated businesses.
-                            </div>
-                        </div>
-                        <div class="pricing-button">
-                            <a href="contact.html" class="pp-theme-btn">Get Started</a>
-                        </div>
-                    </div>
+
+            <div class="vp-billing-toggle wow fadeInUp" data-wow-delay=".5s">
+                <div class="vp-toggle-btn" id="billingToggle">
+                    <div class="vp-toggle-slider"></div>
+                    <div class="vp-toggle-option vp-option-monthly">Monthly</div>
+                    <div class="vp-toggle-option vp-option-yearly">Yearly</div>
                 </div>
-
-                <!-- CARD 2 -->
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="pp-pricing-main-item" style="transform: scale(1.05); z-index: 2; position: relative;">
-                        <div class="pp-pricing-card-item pp-style-2" style="border: 2px solid #0000FE; box-shadow: 0px 30px 60px rgba(0,0,254,0.15);">
-                            <div style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #0000FE 0%, #4D4DFF 100%); color: #fff; padding: 8px 24px; border-radius: 30px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 0 8px 20px rgba(0,0,254,0.4), inset 0 2px 4px rgba(255,255,255,0.4); white-space: nowrap; border: 2px solid #fff; z-index: 10; display: flex; align-items: center; gap: 6px;">
-                                <i class="fa-solid fa-fire" style="color: #FFD700;"></i> MOST POPULAR
-                            </div>
-                            <div style="text-align: center; font-size: 12px; color: #6D6B7B; margin-bottom: 15px; font-weight: 500; padding-top: 10px;">
-                                Chosen by growing retailers and multi-location businesses.
-                            </div>
-                            <div class="pp-pricing-header">
-                                <h5>Business</h5>
-                                <h2>TZS 15,000<span style="display: block; font-size: 16px; margin-top: 5px; color: #6D6B7B; font-weight: 500;">/month</span></h2>
-                                <p style="font-size: 14px; color: #6D6B7B; margin-top: 15px; line-height: 1.6;">
-                                    Built for businesses expanding beyond a single location.
-                                </p>
-                            </div>
-                            
-                            <div class="pp-pricing-features mt-4">
-                                <h6 style="font-size: 12px; color: #0000FE; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;"><i class="fa-solid fa-arrow-trend-up" style="margin-right: 5px;"></i> OPERATIONS</h6>
-                                <ul class="pp-pricing-list mb-4">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 2 Shops</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 2 Branches</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Multiple Users</li>
-                                </ul>
-                                
-                                <h6 style="font-size: 12px; color: #0000FE; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">BUSINESS TOOLS</h6>
-                                <ul class="pp-pricing-list mb-4">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Offline POS System</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Inventory Management</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Debt Tracking</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Customer & Supplier Management</li>
-                                </ul>
-                                
-                                <h6 style="font-size: 12px; color: #0000FE; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">INTELLIGENCE</h6>
-                                <ul class="pp-pricing-list mb-0">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Cloud Synchronization</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Advanced Reports</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Louis AI Insights</li>
-                                </ul>
-                            </div>
-                            
-                            <div style="font-size: 13px; color: #0000FE; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0,0,254,0.1); font-weight: 600;">
-                                BEST FOR: Mini supermarkets, pharmacies, restaurants, and growing retail businesses.
-                            </div>
-                        </div>
-                        <div class="pricing-button">
-                            <a href="contact.html" class="pp-theme-btn" style="background: #0000FE; color: #fff; border-color: #0000FE; box-shadow: 0 10px 20px rgba(0,0,254,0.2);">Start Growing</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="pp-pricing-main-item">
-                        <div class="pp-pricing-card-item">
-                            <div style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #1E73A4 0%, #2BA0E8 100%); color: #fff; padding: 8px 24px; border-radius: 30px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 0 8px 20px rgba(30,115,164,0.4), inset 0 2px 4px rgba(255,255,255,0.4); white-space: nowrap; border: 2px solid #fff; z-index: 10; display: flex; align-items: center; gap: 6px;">
-                                <i class="fa-solid fa-building"></i> MULTI-STORE
-                            </div>
-                            <div class="pp-pricing-header" style="padding-top: 10px;">
-                                <h5>Enterprise</h5>
-                                <h2>TZS 20,000<span style="display: block; font-size: 16px; margin-top: 5px; color: #6D6B7B; font-weight: 500;">/month</span></h2>
-                                <p style="font-size: 14px; color: #6D6B7B; margin-top: 15px; line-height: 1.6;">
-                                    Centralized management for businesses operating multiple stores and branches.
-                                </p>
-                            </div>
-                            
-                            <div class="pp-pricing-features mt-4">
-                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;"><i class="fa-solid fa-network-wired" style="margin-right: 5px;"></i> OPERATIONS</h6>
-                                <ul class="pp-pricing-list mb-4">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 3 Shops</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Up to 3 Branches</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Unlimited Users</li>
-                                </ul>
-                                
-                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">BUSINESS TOOLS</h6>
-                                <ul class="pp-pricing-list mb-4">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Multi-Store Management</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Profit Tracking</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Cloud Backup</li>
-                                </ul>
-                                
-                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">INTELLIGENCE</h6>
-                                <ul class="pp-pricing-list mb-4">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Advanced Analytics</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Advanced Louis AI Insights</li>
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Business Performance Reports</li>
-                                </ul>
-
-                                <h6 style="font-size: 12px; color: #1E73A4; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 700;">SUPPORT</h6>
-                                <ul class="pp-pricing-list mb-0">
-                                    <li><img src="assets/img/home-1/icon/cheak.svg" alt="img"> Priority Support</li>
-                                </ul>
-                            </div>
-
-                            <div style="font-size: 13px; color: #1E73A4; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05); font-weight: 600;">
-                                BEST FOR: Wholesalers, multi-location retailers, and expanding business groups.
-                            </div>
-                        </div>
-                        <div class="pricing-button">
-                            <a href="contact.html" class="pp-theme-btn">Contact Sales</a>
-                        </div>
-                    </div>
-                </div>
+                <span style="font-size: 13px; font-weight: 800; color: #0000FE; background: rgba(0,0,254,0.1); padding: 5px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">Save 20%</span>
             </div>
-
-            <!-- Enterprise Plus Note -->
-            <div class="row justify-content-center mt-5 wow fadeInUp" data-wow-delay=".9s">
-                <div class="col-lg-10">
-                    <div style="background: rgba(30, 115, 164, 0.05); border: 1px solid rgba(0, 0, 254, 0.15); border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 20px;">
-                        <div style="text-align: center; margin-bottom: 15px;">
-                            <h4 style="font-size: 24px; font-weight: 700; color: #050816; margin-bottom: 10px;">Growing Beyond 3 Stores?</h4>
-                            <p style="margin: 0 auto; color: #6D6B7B; font-size: 16px; line-height: 1.6; max-width: 600px;">
-                                Need to manage 4–6 stores or multiple branches?<br>
-                                <strong>Enterprise Plus</strong> provides centralized reporting, advanced Louis AI analytics, multi-store performance tracking, priority support, and custom deployment options for larger operations.
-                            </p>
+            
+            <div class="row g-4 pt-2">
+                <!-- STARTER -->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="vp-pricing-card vp-card-starter">
+                        <div class="vp-pricing-icon"><i class="fa-solid fa-store"></i></div>
+                        <h3 class="vp-plan-name">Starter</h3>
+                        <p class="vp-plan-tagline">Everything you need to run your business confidently.</p>
+                        
+                        <div class="vp-pricing-price">
+                            <span class="price-currency">TZS</span>
+                            <span class="price-amount" data-monthly="10,000" data-yearly="96,000">10,000</span>
+                        </div>
+                        <div class="vp-pricing-period">per <span class="period-text">month</span></div>
+                        <div class="vp-pricing-savings"><span class="savings-amount">Save TZS 24,000</span></div>
+                        
+                        <p class="vp-pricing-desc">Perfect for small businesses looking for a complete business management platform.</p>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">OPERATIONS</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> 1 Shop</li>
+                                <li><i class="fa-solid fa-check"></i> Up to 2 Users</li>
+                                <li><i class="fa-solid fa-check"></i> Offline POS System</li>
+                                <li><i class="fa-solid fa-check"></i> Inventory Management</li>
+                                <li><i class="fa-solid fa-check"></i> Sales Tracking</li>
+                            </ul>
                         </div>
                         
-                        <div class="row justify-content-center mb-2">
-                            <div class="col-lg-10">
-                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
-                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Up to 6 Stores & Branches</li>
-                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Advanced Louis AI Analytics</li>
-                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Centralized Reporting</li>
-                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Multi-Store Performance Tracking</li>
-                                    <li style="font-size: 14px; color: #050816; font-weight: 600;"><i class="fa-solid fa-check" style="color: #0000FE; margin-right: 5px;"></i> Dedicated Support</li>
-                                </ul>
-                            </div>
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">BUSINESS TOOLS</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Customer Management</li>
+                                <li><i class="fa-solid fa-check"></i> Supplier Management</li>
+                                <li><i class="fa-solid fa-check"></i> Debt Tracking</li>
+                                <li><i class="fa-solid fa-check"></i> Mobile Money Tracking</li>
+                            </ul>
                         </div>
-
-                        <div style="text-align: center; margin-top: 15px;">
-                            <a href="contact.html" class="pp-theme-btn" style="background: transparent; border: 2px solid #0000FE; color: #0000FE; padding: 12px 35px; text-align: center; font-weight: 600; box-shadow: 0 5px 15px rgba(0,0,254,0.1);">Contact Sales</a>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">INTELLIGENCE</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Basic Reports</li>
+                                <li><i class="fa-solid fa-check"></i> Cloud Backup</li>
+                                <li><i class="fa-solid fa-check"></i> Louis AI Insights</li>
+                            </ul>
                         </div>
+                        
+                        <div class="vp-feature-group mb-4">
+                            <div class="vp-feature-title">SUPPORT</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Email Support</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="auth/register.html" class="vp-pricing-btn vp-btn-outline">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- BUSINESS -->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="vp-pricing-card dominant vp-card-business">
+                        <div class="vp-popular-badge"><i class="fa-solid fa-fire text-warning"></i> MOST POPULAR</div>
+                        <div class="vp-pricing-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                        <h3 class="vp-plan-name">Business</h3>
+                        <p class="vp-plan-tagline">Designed for growing businesses and expanding operations.</p>
+                        
+                        <div class="vp-pricing-price">
+                            <span class="price-currency">TZS</span>
+                            <span class="price-amount" data-monthly="20,000" data-yearly="192,000">20,000</span>
+                        </div>
+                        <div class="vp-pricing-period">per <span class="period-text">month</span></div>
+                        <div class="vp-pricing-savings"><span class="savings-amount">Save TZS 48,000</span></div>
+                        
+                        <p class="vp-pricing-desc">Manage multiple shops and unlock deeper operational insights.</p>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">OPERATIONS</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Up to 3 Shops</li>
+                                <li><i class="fa-solid fa-check"></i> Up to 5 Users</li>
+                                <li><i class="fa-solid fa-check"></i> Multi-Store Management</li>
+                                <li><i class="fa-solid fa-check"></i> Branch Performance Tracking</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">BUSINESS TOOLS</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Advanced Inventory Analytics</li>
+                                <li><i class="fa-solid fa-check"></i> Real-Time Cloud Synchronization</li>
+                                <li><i class="fa-solid fa-check"></i> Faster Backup & Recovery</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">INTELLIGENCE</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Advanced Reports</li>
+                                <li><i class="fa-solid fa-check"></i> Advanced Louis AI Insights</li>
+                                <li><i class="fa-solid fa-check"></i> Business Performance Monitoring</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vp-feature-group mb-4">
+                            <div class="vp-feature-title">SUPPORT</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                            </ul>
+                        </div>
+                        
+                        <p style="text-align: center; font-size: 12px; color: #6D6B7B; margin-bottom: 15px; font-weight: 600;">Chosen by growing retailers, pharmacies, restaurants, and multi-location businesses.</p>
+                        <a href="auth/register.html" class="vp-pricing-btn vp-btn-primary">Start Growing</a>
+                    </div>
+                </div>
+                
+                <!-- ENTERPRISE -->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="vp-pricing-card vp-card-enterprise">
+                        <div class="vp-pricing-icon"><i class="fa-solid fa-building"></i></div>
+                        <h3 class="vp-plan-name">Enterprise</h3>
+                        <p class="vp-plan-tagline">Built for businesses operating at scale.</p>
+                        
+                        <div class="vp-pricing-price">
+                            <span class="price-currency">TZS</span>
+                            <span class="price-amount" data-monthly="35,000" data-yearly="336,000">35,000</span>
+                        </div>
+                        <div class="vp-pricing-period">per <span class="period-text">month</span></div>
+                        <div class="vp-pricing-savings"><span class="savings-amount">Save TZS 84,000</span></div>
+                        
+                        <p class="vp-pricing-desc">Centralized management, analytics, and support for larger organizations.</p>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">OPERATIONS</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Up to 6 Shops</li>
+                                <li><i class="fa-solid fa-check"></i> Unlimited Users</li>
+                                <li><i class="fa-solid fa-check"></i> Multi-Branch Management</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">BUSINESS TOOLS</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Custom Business Configuration</li>
+                                <li><i class="fa-solid fa-check"></i> Advanced Security Controls</li>
+                                <li><i class="fa-solid fa-check"></i> Enterprise Workflow Support</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vp-feature-group">
+                            <div class="vp-feature-title">INTELLIGENCE</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Enterprise Analytics</li>
+                                <li><i class="fa-solid fa-check"></i> Advanced Profit Intelligence</li>
+                                <li><i class="fa-solid fa-check"></i> Multi-Store Performance Reports</li>
+                                <li><i class="fa-solid fa-check"></i> Advanced Louis AI Insights</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vp-feature-group mb-4">
+                            <div class="vp-feature-title">SUPPORT</div>
+                            <ul class="vp-feature-list">
+                                <li><i class="fa-solid fa-check"></i> Dedicated Account Support</li>
+                                <li><i class="fa-solid fa-check"></i> Premium Support</li>
+                                <li><i class="fa-solid fa-check"></i> Early Access Features</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="contact.html" class="vp-pricing-btn vp-btn-outline">Contact Sales</a>
                     </div>
                 </div>
             </div>
-
+            
+            <!-- Trust Bar -->
+            <div class="vp-trust-bar wow fadeInUp" data-wow-delay=".8s">
+                <div class="vp-trust-item"><i class="fa-solid fa-circle-check"></i> No Setup Fees</div>
+                <div class="vp-trust-item"><i class="fa-solid fa-circle-check"></i> Cancel Anytime</div>
+                <div class="vp-trust-item"><i class="fa-solid fa-circle-check"></i> Offline-First Platform</div>
+                <div class="vp-trust-item"><i class="fa-solid fa-circle-check"></i> Free Onboarding Support</div>
+            </div>
+            
+            <!-- Enterprise Plus Banner -->
+            <div class="vp-enterprise-banner wow fadeInUp" data-wow-delay=".9s">
+                <div class="row align-items-center position-relative" style="z-index: 2;">
+                    <div class="col-lg-8">
+                        <h3 class="vp-eb-title">Growing Beyond 6 Stores?</h3>
+                        <p class="vp-eb-desc">
+                            Need advanced deployment options, additional stores, custom integrations, or dedicated infrastructure?<br>
+                            <strong>Enterprise Plus</strong> provides tailored solutions for larger organizations.
+                        </p>
+                        <ul class="vp-eb-features">
+                            <li><i class="fa-solid fa-check"></i> Unlimited Stores</li>
+                            <li><i class="fa-solid fa-check"></i> Advanced Louis AI Analytics</li>
+                            <li><i class="fa-solid fa-check"></i> Centralized Reporting</li>
+                            <li><i class="fa-solid fa-check"></i> Dedicated Success Manager</li>
+                            <li><i class="fa-solid fa-check"></i> Custom Integrations</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <a href="contact.html" class="vp-pricing-btn vp-btn-primary" style="display: inline-block; width: auto; padding: 14px 40px;">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const toggleBtn = document.getElementById('billingToggle');
+                const priceAmounts = document.querySelectorAll('.price-amount');
+                const periodTexts = document.querySelectorAll('.period-text');
+                const pricingWrapper = document.querySelector('.vp-pricing-wrapper');
+                
+                if(toggleBtn) {
+                    toggleBtn.addEventListener('click', function() {
+                        this.classList.toggle('yearly');
+                        const isYearly = this.classList.contains('yearly');
+                        
+                        if(isYearly) {
+                            pricingWrapper.classList.add('yearly-active');
+                        } else {
+                            pricingWrapper.classList.remove('yearly-active');
+                        }
+                        
+                        priceAmounts.forEach(el => {
+                            el.style.opacity = 0;
+                            setTimeout(() => {
+                                el.textContent = isYearly ? el.getAttribute('data-yearly') : el.getAttribute('data-monthly');
+                                el.style.opacity = 1;
+                            }, 200);
+                        });
+                        
+                        periodTexts.forEach(el => {
+                            el.style.opacity = 0;
+                            setTimeout(() => {
+                                el.textContent = isYearly ? 'year' : 'month';
+                                el.style.opacity = 1;
+                            }, 200);
+                        });
+                    });
+                }
+            });
+        </script>
     </section>
 
     <!-- Pp-testimonial Section Start (Enhanced Video Slider) -->
@@ -1001,7 +1131,7 @@
                                 Manage sales, inventory, finances, and business growth from one intelligent platform.
                             </p>
                             <div class="pp-cta-button">
-                                <a href="#demo" class="pp-theme-btn wow fadeInUp" data-wow-delay=".3s">Book a Demo <i
+                                <a href="request-demo.html" class="pp-theme-btn wow fadeInUp" data-wow-delay=".3s">Book a Demo <i
                                         class="fa-solid fa-arrow-right-long"></i></a>
                                 <a href="#contact" class="pp-theme-btn pp-style-2 wow fadeInUp" data-wow-delay=".3s"
                                     style="margin-left: 15px;">Contact Sales <i
